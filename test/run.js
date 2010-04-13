@@ -4,7 +4,7 @@ var http = require('http'),
 
 var b = new balance.Balancer();
 b.addListener("route", function (request) {
-  request.setRoute(5984, 'localhost')
+  request.setRoute(5984, 'couchdb.pythonesque.org')
 })
 
 var server = b.getServer();
